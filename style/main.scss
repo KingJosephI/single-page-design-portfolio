@@ -1,1 +1,32 @@
 @use './base/' as *;
+@use './abstract/' as *;
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-consultation {
+  text-decoration: none;
+  color: $light-cream;
+  font-weight: 700;
+
+  background-color: $black;
+  padding: rem(23) rem(45);
+  border-radius: rem(45);
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $purple;
+  }
+}
+
+.book-call__button {
+  background-color: $dark-pink;
+
+  &:hover {
+    background-color: $orange;
+  }
+}

@@ -1,3 +1,4 @@
+@use '../abstract/' as *;
 *,
 *::before,
 *::after {
@@ -8,4 +9,22 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: rem(18);
+  line-height: rem(28);
+  background-color: $light-cream;
+  color: $grey;
+  padding: rem(16);
+
+  @media screen and (min-width: rem(700)) {
+    padding-block: rem(35);
+    padding-inline: rem(39.17);
+  }
+
+  @media screen and (min-width: rem(1024)) {
+    padding-inline: rem(165);
+  }
+}
+
+img {
+  width: 100%;
 }

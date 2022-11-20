@@ -9,4 +9,51 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5555555556rem;
+  background-color: #fff7f0;
+  color: #7a746e;
+  padding: 0.8888888889rem;
+}
+@media screen and (min-width: 38.8888888889rem) {
+  body {
+    padding-block: 1.9444444444rem;
+    padding-inline: 2.1761111111rem;
+  }
+}
+@media screen and (min-width: 56.8888888889rem) {
+  body {
+    padding-inline: 9.1666666667rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-consultation {
+  text-decoration: none;
+  color: #fff7f0;
+  font-weight: 700;
+  background-color: #030303;
+  padding: 1.2777777778rem 2.5rem;
+  border-radius: 2.5rem;
+  transition: 0.2s;
+}
+.btn-consultation:hover {
+  background-color: #755cde;
+}
+
+.book-call__button {
+  background-color: #eb7565;
+}
+.book-call__button:hover {
+  background-color: #f6a560;
 }/*# sourceMappingURL=main.css.map */

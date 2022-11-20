@@ -78,6 +78,62 @@ img {
   line-height: 1.4444444444rem;
   font-weight: 500;
 }
+.hero__services {
+  margin-top: 1.7777777778rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(4, 1fr);
+  gap: 1.3333333333rem;
+}
+.hero__services .card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2222222222rem;
+  color: #fff7f0;
+  padding: 1.3333333333rem;
+  border-radius: 0.3333333333rem;
+}
+.hero__services .card__image {
+  align-self: end;
+}
+.hero__services .card img {
+  width: 3.5555555556rem;
+}
+.hero__services .card--graphic {
+  background-color: #755cde;
+  grid-column: 1/3;
+}
+.hero__services .card--graphic img {
+  width: 7.1111111111rem;
+  height: 10.6666666667rem;
+}
+.hero__services .card--ui {
+  background-color: #f6a560;
+}
+.hero__services .card--apps {
+  background-color: #f39e9e;
+}
+.hero__services .card--illustrations {
+  grid-column: 1/3;
+  background-color: #eb7565;
+}
+.hero__services .card--illustrations img {
+  width: 7.1111111111rem;
+}
+.hero__services .card--photography {
+  background-color: #61c4b7;
+  grid-column: 1/3;
+}
+.hero__services .card--photography img {
+  width: 8.8888888889rem;
+}
+.hero__services .card--motion {
+  background-color: #552049;
+  grid-column: 1/3;
+}
+.hero__services .card--motion img {
+  width: 7.1111111111rem;
+}
 
 @media screen and (min-width: 38.8888888889rem) {
   .hero__title {
@@ -90,11 +146,17 @@ img {
     font-size: 1rem;
     line-height: 1.5555555556rem;
   }
+  .hero__services {
+    margin-top: 3.5555555556rem;
+  }
 }
 @media screen and (min-width: 56.8888888889rem) {
   .hero__title {
     font-size: 3.1111111111rem;
     -webkit-padding-after: 1.2777777778rem;
             padding-block-end: 1.2777777778rem;
+  }
+  .hero__services {
+    margin-top: 4.4444444444rem;
   }
 }/*# sourceMappingURL=main.css.map */

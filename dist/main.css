@@ -56,4 +56,45 @@ img {
 }
 .book-call__button:hover {
   background-color: #f6a560;
+}
+
+.hero {
+  -webkit-padding-before: 1.7777777778rem;
+          padding-block-start: 1.7777777778rem;
+}
+.hero__title {
+  color: #030303;
+  text-align: center;
+  font-size: 2rem;
+  width: 16.6666666667rem;
+  line-height: 2.2222222222rem;
+  margin: 0 auto;
+  -webkit-padding-after: 0.8888888889rem;
+          padding-block-end: 0.8888888889rem;
+}
+.hero__description {
+  text-align: center;
+  font-size: 0.8888888889rem;
+  line-height: 1.4444444444rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 38.8888888889rem) {
+  .hero__title {
+    width: 100%;
+    -webkit-padding-after: 1.5rem;
+            padding-block-end: 1.5rem;
+    font-size: 2.4444444444rem;
+  }
+  .hero__description {
+    font-size: 1rem;
+    line-height: 1.5555555556rem;
+  }
+}
+@media screen and (min-width: 56.8888888889rem) {
+  .hero__title {
+    font-size: 3.1111111111rem;
+    -webkit-padding-after: 1.2777777778rem;
+            padding-block-end: 1.2777777778rem;
+  }
 }/*# sourceMappingURL=main.css.map */

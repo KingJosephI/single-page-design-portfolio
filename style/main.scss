@@ -30,3 +30,47 @@
     background-color: $orange;
   }
 }
+
+.hero {
+  padding-block-start: rem(32);
+
+  &__title {
+    color: $black;
+    text-align: center;
+    font-size: rem(36);
+    width: rem(300);
+    line-height: rem(40);
+    margin: 0 auto;
+    padding-block-end: rem(16);
+  }
+
+  &__description {
+    text-align: center;
+    font-size: rem(16);
+    line-height: rem(26);
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .hero {
+    &__title {
+      width: 100%;
+      padding-block-end: rem(27);
+      font-size: rem(44);
+    }
+    &__description {
+      font-size: rem(18);
+      line-height: rem(28);
+    }
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .hero {
+    &__title {
+      font-size: rem(56);
+      padding-block-end: rem(23);
+    }
+  }
+}

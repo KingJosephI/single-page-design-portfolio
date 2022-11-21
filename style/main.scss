@@ -166,6 +166,11 @@
     padding-block: rem(32);
   }
 
+  &__image {
+    width: rem(270);
+    height: rem(180);
+  }
+
   div:has(.arrow-button) {
     display: flex;
     justify-content: center;
@@ -306,6 +311,11 @@
       display: flex;
       padding-block: rem(56);
     }
+
+    &__image {
+      width: rem(540);
+      height: rem(360);
+    }
   }
 
   .book-call {
@@ -389,13 +399,14 @@
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    gap: clamp(rem(100), rem(100), rem(100));
 
     &__title {
       font-size: rem(40);
     }
 
     &__description {
-      padding-inline-end: rem(300);
+      // padding-inline-end: rem(300);
     }
   }
 }

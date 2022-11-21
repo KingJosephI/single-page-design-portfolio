@@ -1,4 +1,5 @@
 @use '../abstract/' as *;
+
 *,
 *::before,
 *::after {
@@ -13,18 +14,30 @@ body {
   line-height: rem(28);
   background-color: $light-cream;
   color: $grey;
-  padding: rem(16);
+  padding-block: rem(16);
+
+  & > *:not(section.work) {
+    margin-inline: rem(16);
+  }
 
   @media screen and (min-width: rem(700)) {
     padding-block: rem(35);
-    padding-inline: rem(39.17);
+
+    & > *:not(section.work) {
+      margin-inline: rem(39.17);
+    }
+    & > section.author {
+      margin-inline-start: rem(-45);
+    }
   }
 
   @media screen and (min-width: rem(1024)) {
-    padding-inline: rem(165);
+    & > *:not(section.work) {
+      margin-inline: rem(165);
+    }
   }
-}
 
-img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }

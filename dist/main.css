@@ -13,21 +13,29 @@ body {
   line-height: 1.5555555556rem;
   background-color: #fff7f0;
   color: #7a746e;
-  padding: 0.8888888889rem;
+  padding-block: 0.8888888889rem;
+}
+body > *:not(section.work) {
+  margin-inline: 0.8888888889rem;
 }
 @media screen and (min-width: 38.8888888889rem) {
   body {
     padding-block: 1.9444444444rem;
-    padding-inline: 2.1761111111rem;
+  }
+  body > *:not(section.work) {
+    margin-inline: 2.1761111111rem;
+  }
+  body > section.author {
+    -webkit-margin-start: -2.5rem;
+            margin-inline-start: -2.5rem;
   }
 }
 @media screen and (min-width: 56.8888888889rem) {
-  body {
-    padding-inline: 9.1666666667rem;
+  body > *:not(section.work) {
+    margin-inline: 9.1666666667rem;
   }
 }
-
-img {
+body img {
   width: 100%;
 }
 
@@ -170,6 +178,10 @@ img {
   display: flex;
   padding-block: 1.7777777778rem;
 }
+.work__image {
+  width: 15rem;
+  height: 10rem;
+}
 .work div:has(.arrow-button) {
   display: flex;
   justify-content: center;
@@ -289,6 +301,10 @@ img {
     display: flex;
     padding-block: 3.1111111111rem;
   }
+  .work__image {
+    width: 30rem;
+    height: 20rem;
+  }
   .book-call {
     padding: 3.6111111111rem 4.1666666667rem;
   }
@@ -354,12 +370,9 @@ img {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    gap: 5.5555555556rem;
   }
   .book-call__title {
     font-size: 2.2222222222rem;
-  }
-  .book-call__description {
-    -webkit-padding-end: 16.6666666667rem;
-            padding-inline-end: 16.6666666667rem;
   }
 }/*# sourceMappingURL=main.css.map */

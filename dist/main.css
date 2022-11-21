@@ -191,6 +191,9 @@ body img {
   cursor: grab;
   scroll-behavior: auto;
 }
+.work__slides.dragging img {
+  pointer-events: none;
+}
 .work div:has(.arrow-button) {
   display: flex;
   justify-content: center;
@@ -213,6 +216,10 @@ body img {
 .work .arrow-button:hover {
   cursor: pointer;
   background-color: #755cde;
+}
+.work .arrow-button:first-of-type {
+  background-color: #cecbcb;
+  pointer-events: none;
 }
 
 .book-call {

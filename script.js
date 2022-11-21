@@ -3,12 +3,27 @@ const firstImage = document.querySelectorAll('.work__slides img')[0];
 const arrowButtons = document.querySelectorAll('.arrow-button');
 
 let firstImageWidth = firstImage.clientWidth;
+let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+
+const showHiddenIcons = () => {
+  arrowButtons[0].style.backgroundColor =
+    carousel.scrollLeft === 0 ? '#b0adad' : '#030303';
+  arrowButtons[0].style.pointerEvents =
+    carousel.scrollLeft === 0 ? 'none' : 'all';
+
+  // arrowButtons[1].style.backgroundColor =
+  //   carousel.scrollLeft === scrollWidth ? '#b0adad' : '#030303';
+  // arrowButtons[1].style.pointerEvents =
+  //   carousel.scrollLeft === scrollWidth ? 'none' : 'all';
+};
 
 arrowButtons.forEach((arrow) => {
   arrow.addEventListener('click', () => {
     // If the clicked icon is the left, reduce width value from the carousel scroll left, else add to it
     carousel.scrollLeft +=
       arrow.id === 'left' ? -firstImageWidth : firstImageWidth;
+
+    showHiddenIcons();
   });
 });
 

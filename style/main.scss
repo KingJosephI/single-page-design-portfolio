@@ -178,6 +178,10 @@
   &__slides.dragging {
     cursor: grab;
     scroll-behavior: auto;
+
+    img {
+      pointer-events: none;
+    }
   }
 
   div:has(.arrow-button) {
@@ -203,6 +207,11 @@
     &:hover {
       cursor: pointer;
       background-color: $purple;
+    }
+
+    &:first-of-type {
+      background-color: #cecbcb;
+      pointer-events: none;
     }
   }
 }
@@ -317,14 +326,8 @@
     }
 
     &__slides {
-      // display: flex;
       padding-block: rem(56);
     }
-
-    // &__image {
-    //   width: rem(540);
-    //   height: rem(360);
-    // }
   }
 
   .book-call {

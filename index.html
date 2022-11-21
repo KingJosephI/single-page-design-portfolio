@@ -11,6 +11,7 @@
     />
     <title>Single-page design portfolio</title>
     <link rel="stylesheet" href="./dist/main.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -89,27 +90,17 @@
     <section class="work">
       <h2 class="work__title">My Work</h2>
       <div class="work__slides">
-        <!-- <div class="work__image"> -->
         <img src="./assets/image-slide-1.jpg" alt="" />
-        <!-- </div> -->
-        <!-- <div class="work__image"> -->
         <img src="./assets/image-slide-2.jpg" alt="" />
-        <!-- </div> -->
-        <!-- <div class="work__image"> -->
         <img src="./assets/image-slide-3.jpg" alt="" />
-        <!-- </div> -->
-        <!-- <div class="work__image">
-          <img src="./assets/image-slide-4.jpg" alt="" />
-        </div>
-        <div class="work__image">
-          <img src="./assets/image-slide-5.jpg" alt="" />
-        </div> -->
+        <img src="./assets/image-slide-4.jpg" alt="" />
+        <img src="./assets/image-slide-5.jpg" alt="" />
       </div>
       <div>
-        <button class="arrow-button">
+        <button id="left" class="arrow-button arrow-left">
           <img src="./assets/icon-arrow-left.svg" alt="" />
         </button>
-        <button class="arrow-button">
+        <button id="right" class="arrow-button arrow-right">
           <img src="./assets/icon-arrow-right.svg" alt="" />
         </button>
       </div>

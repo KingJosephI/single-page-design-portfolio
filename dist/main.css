@@ -177,10 +177,19 @@ body img {
 .work__slides {
   display: flex;
   padding-block: 1.7777777778rem;
+  gap: 1.1111111111rem;
+  overflow: hidden;
+  cursor: pointer;
+  scroll-behavior: smooth;
 }
-.work__image {
-  width: 15rem;
-  height: 10rem;
+.work__slides img {
+  width: 33.3333333333%;
+  border-radius: 0.5555555556rem;
+}
+.work__slides.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+  scroll-behavior: auto;
 }
 .work div:has(.arrow-button) {
   display: flex;
@@ -298,12 +307,7 @@ body img {
     font-size: 1.7777777778rem;
   }
   .work__slides {
-    display: flex;
     padding-block: 3.1111111111rem;
-  }
-  .work__image {
-    width: 30rem;
-    height: 20rem;
   }
   .book-call {
     padding: 3.6111111111rem 4.1666666667rem;

@@ -164,11 +164,20 @@
   &__slides {
     display: flex;
     padding-block: rem(32);
+    gap: rem(20);
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+
+    img {
+      width: calc(100% / 3);
+      border-radius: rem(10);
+    }
   }
 
-  &__image {
-    width: rem(270);
-    height: rem(180);
+  &__slides.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
   }
 
   div:has(.arrow-button) {
@@ -308,14 +317,14 @@
     }
 
     &__slides {
-      display: flex;
+      // display: flex;
       padding-block: rem(56);
     }
 
-    &__image {
-      width: rem(540);
-      height: rem(360);
-    }
+    // &__image {
+    //   width: rem(540);
+    //   height: rem(360);
+    // }
   }
 
   .book-call {

@@ -217,10 +217,6 @@ body img {
   cursor: pointer;
   background-color: #755cde;
 }
-.work .arrow-button:first-of-type {
-  background-color: #cecbcb;
-  pointer-events: none;
-}
 
 .book-call {
   background-color: #030303;

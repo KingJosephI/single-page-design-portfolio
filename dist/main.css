@@ -278,8 +278,8 @@ body img {
   }
   .author {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.1111111111rem;
+    grid-auto-flow: column;
+    gap: 3.8333333333rem;
     text-align: left;
     padding-block: 6.6666666667rem;
   }
@@ -356,6 +356,7 @@ body img {
     grid-row: 2/3;
   }
   .author {
+    gap: 6.9444444444rem;
     padding-block: 7.5555555556rem;
   }
   .author__photo {

@@ -39,14 +39,16 @@ img {
 }
 
 .btn-consultation {
-  text-decoration: none;
-  color: #fff7f0;
+  display: inline-block;
+  font-size: 0.7777777778rem;
   font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5555555556rem;
+  color: #fff7f0;
   background-color: #030303;
   padding: 1.2777777778rem 2.5rem;
   border-radius: 2.5rem;
   transition: 0.2s;
-  display: inline-block;
 }
 .btn-consultation:hover {
   background-color: #755cde;
@@ -158,7 +160,62 @@ img {
   padding-block: 1.3333333333rem;
 }
 
+.work__title {
+  color: #030303;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3333333333rem;
+}
+.work__slides {
+  display: flex;
+  padding-block: 1.7777777778rem;
+}
+.work div:has(.arrow-button) {
+  display: flex;
+  justify-content: center;
+  gap: 0.8888888889rem;
+}
+.work .arrow-button {
+  width: 3.5555555556rem;
+  height: 3.5555555556rem;
+  background-color: #030303;
+  border: none;
+  border-radius: 50%;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work .arrow-button img {
+  width: 0.8888888889rem;
+}
+.work .arrow-button:hover {
+  cursor: pointer;
+  background-color: #755cde;
+}
+
+.book-call {
+  background-color: #030303;
+  color: #fff7f0;
+  padding: 3rem 1.5555555556rem;
+  text-align: center;
+  border-radius: 0.5555555556rem;
+  margin-block: 5.5555555556rem 2.2222222222rem;
+}
+.book-call__title {
+  font-size: 1.4444444444rem;
+  font-weight: 700;
+}
+.book-call__description {
+  padding-block: 1.3333333333rem;
+  font-size: 0.8888888889rem;
+  line-height: 1.4444444444rem;
+}
+
 @media screen and (min-width: 38.8888888889rem) {
+  .btn-consultation {
+    font-size: 0.8888888889rem;
+  }
   .hero {
     -webkit-padding-before: 3.5555555556rem;
             padding-block-start: 3.5555555556rem;
@@ -225,6 +282,23 @@ img {
     font-size: 1rem;
     line-height: 1.5555555556rem;
   }
+  .work__title {
+    font-size: 1.7777777778rem;
+  }
+  .work__slides {
+    display: flex;
+    padding-block: 3.1111111111rem;
+  }
+  .book-call {
+    padding: 3.6111111111rem 4.1666666667rem;
+  }
+  .book-call__title {
+    font-size: 1.7777777778rem;
+  }
+  .book-call__description {
+    font-size: 1rem;
+    line-height: 1.5555555556rem;
+  }
 }
 @media screen and (min-width: 56.8888888889rem) {
   .hero {
@@ -273,5 +347,19 @@ img {
   }
   .author__introduction {
     font-size: 2.2222222222rem;
+  }
+  .book-call {
+    padding: 5rem 3.7222222222rem;
+    text-align: left;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  .book-call__title {
+    font-size: 2.2222222222rem;
+  }
+  .book-call__description {
+    -webkit-padding-end: 16.6666666667rem;
+            padding-inline-end: 16.6666666667rem;
   }
 }/*# sourceMappingURL=main.css.map */
